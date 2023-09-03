@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 const Hero = () => {
   return (
-    <section className="px-3 md:px-8 py-4 md:py-8 overflow-visible">
+    <section className="px-3 md:px-8 py-4 md:py-8 overflow-visible sm:h-[500px] h-[350px]">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className="mx-auto flex flex-col w-[1200px]"
+        className="mx-auto flex flex-col w-[1200px] "
       >
         <div className="flex gap-1 justify-center">
           <motion.h2
